@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   
   <title>Rock | Paper | Scissors</title>
@@ -11,7 +13,30 @@
 
 
 <body>
-  
+  <header>
+    <img src="img/header.png" alt="Rock, Paper, Scissors cartoon">
+    <h1>Rock, Paper, Scissors</h1>
+  </header>
+  <section class="instructions">
+    <p>Choose either the rock, paper, or scissors icon below and try to beat the computer!</p>
+    <ul>
+      <li><span>How to win:</span></li>
+      <li>Rock breaks Scissors</li>
+      <li>Scissors cut Paper</li>
+      <li>Paper covers Rock</li>
+    </ul>
+  </section>
+  <section class="options">
+    <ul id="pick-one">
+      <li><img src="img/rock.png" alt="Rock icon">Rock</li>
+      <li><img src="img/scissors.png" alt="Scissors icon">Scissors</li>
+      <li><img src="img/paper.png" alt="Paper icon">Paper</li>
+    </ul>
+    <div class="win"></div>
+    <div class="lose"></div>
+  </section>
+
+
   <footer>
     <p class="attribution">
       Coded by <a href="https://github.com/lauradisanza" target="_blank">Laura DiSanza</a>.

@@ -1,0 +1,85 @@
+/* BASE STYLES */
+body {
+  color: charcoal;
+  font-family: font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER STYLES */
+header img {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 2em;
+}
+
+h1 {
+  font-family: 'New Tegomin', serif;
+  margin: 0 auto;
+}
+
+/* INSTRUCTION STYLES */
+.instructions {
+  width: 70%;
+}
+
+.instructions ul {
+  line-height: 1.5em;
+}
+
+.instructions span {
+  font-family: 'New Tegomin', serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* OPTION STYLES */
+.options {
+  margin: 14px 10%;
+  width: 80%;
+}
+
+#pick-one {
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.options li {
+  font-weight: bold;
+  width: 33%;
+  height: auto;
+}
+
+.options img {
+  width: 100%;
+}
+
+/* FOOTER STYLES */
+footer p {
+  font-size: .75em;
+  margin-top: 30px;
+}
+
+
+@media all and (min-width:768px) {
+  /* Tablet styles here */
+
+}
+
+
+@media all and (min-width:1200px) {
+  /* Desktop styles here */
+
+}
