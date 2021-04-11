@@ -51,6 +51,10 @@ h1 {
   width: 80%;
 }
 
+.options-hide {
+  display: none;
+}
+
 .pick-one {
   display: flex;
   justify-content: center;
@@ -65,6 +69,10 @@ h1 {
 
 .options img {
   width: 100%;
+}
+
+.results {
+  width: 80%;
 }
 
 /* FOOTER STYLES */
