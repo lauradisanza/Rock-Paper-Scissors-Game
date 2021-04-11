@@ -51,7 +51,8 @@ h1 {
   width: 80%;
 }
 
-.options-hide {
+/*Will this work to hide the options div? Or should I hid the pick one part? */
+.options.hide { 
   display: none;
 }
 
@@ -71,8 +72,23 @@ h1 {
   width: 100%;
 }
 
-.results {
+/* How to make the results a div that appears? Look at Skillcrush lesson 6 challenge 1 */
+.win {
   width: 80%;
+  background-image: nopeat;
+  margin-top: 20px;
+}
+
+.draw {
+  width: 80%;
+  background-image: nopeat;
+  margin-top: 20px;
+}
+
+.lose {
+  width: 80%;
+  background-image: nopeat;
+  margin-top: 20px;
 }
 
 /* FOOTER STYLES */

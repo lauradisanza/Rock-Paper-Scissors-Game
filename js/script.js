@@ -14,7 +14,51 @@ var computerChoice = computerOptions[Math.floor(Math.random()*3)];
 
 rock.addEventListener("click", function () {
     if (computerChoice === 'rock') {
-        options.classList.remove("options-hide");
-        /* show .results class */
+        showDraw();
+    } else if (computerChoice === 'scissors') {
+        showWin();
+    } else if (computerChoice === 'paper') {
+        showLose();
     }
-})
+});
+
+scissors.addEventListener("click", function () {
+    if (computerChoice === 'rock') {
+        showLose();
+    } else if (computerChoice === 'scissors') {
+        showDraw();
+    } else if (computerChoice === 'paper') {
+        showWin();
+    }
+});
+
+paper.addEventListener("click", function () {
+    if (computerChoice === 'rock') {
+        showWin();
+    } else if (computerChoice === 'scissors') {
+        showLose();
+    } else if (computerChoice === 'paper') {
+        showDraw();
+    }
+});
+
+var showWin = function () {
+    /* remove div */
+    /* show winner image and play again button */
+};
+
+var showDraw = function () {
+    /* remove div */
+    /* show draw image and play again button */
+};
+
+var showLose = function () {
+    /* remove div */
+    /* show try again image and play again button */
+};
+
+/* button.addEventListener("click", function () {
+    when you click the Play Again button and it returns to normal
+}); 
+
+Will need a button variable once that is added */
