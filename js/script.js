@@ -57,8 +57,10 @@ var showLose = function () {
     /* show try again image and play again button */
 };
 
-/* button.addEventListener("click", function () {
+/* Will need a button variable once that is added 
+
+button.addEventListener("click", function () {
     when you click the Play Again button and it returns to normal
 }); 
 
-Will need a button variable once that is added */
+ */
