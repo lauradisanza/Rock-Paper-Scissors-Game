@@ -9,10 +9,11 @@ const playAgain = document.querySelector(".button");
 
 /* Computer's choice */
 const computerOptions = ['rock', 'scissors', 'paper'];
-const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
+// const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
 
 /* If player selects Rock */
 rock.addEventListener("click", function () {
+    const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
     if (computerChoice === 'rock') {
         showDraw();
     } else if (computerChoice === 'scissors') {
@@ -24,6 +25,7 @@ rock.addEventListener("click", function () {
 
 /* If player selects Scissors */
 scissors.addEventListener("click", function () {
+    const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
     if (computerChoice === 'rock') {
         showLose();
     } else if (computerChoice === 'scissors') {
@@ -35,6 +37,7 @@ scissors.addEventListener("click", function () {
 
 /* If player selects Paper */
 paper.addEventListener("click", function () {
+    const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
     if (computerChoice === 'rock') {
         showWin();
     } else if (computerChoice === 'scissors') {
