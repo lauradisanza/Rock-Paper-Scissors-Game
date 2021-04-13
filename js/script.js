@@ -1,17 +1,17 @@
-/* Variables for the person's choice? */
- var rock = document.querySelector("#rock");
- var scissors = document.querySelector("#scissors");
- var paper = document.querySelector("#paper");
- var options = document.querySelector(".options");
-
+const rock = document.querySelector("#rock");
+const scissors = document.querySelector("#scissors");
+const paper = document.querySelector("#paper");
+const options = document.querySelector(".options");
+const win = document.querySelector(".win");
+const draw = document.querySelector(".draw");
+const lose = document.querySelector(".lose");
+const playAgain = document.querySelector(".button");
 
 /* Computer's choice */
-var computerOptions = ['rock', 'scissors', 'paper'];
-var computerChoice = computerOptions[Math.floor(Math.random()*3)];
+const computerOptions = ['rock', 'scissors', 'paper'];
+const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
 
-/* Now the conditions for win, lose or draw */
-/* are we doing a function with a click event? with all of the ifs nestled on the inside? */
-
+/* If player selects Rock */
 rock.addEventListener("click", function () {
     if (computerChoice === 'rock') {
         showDraw();
@@ -22,6 +22,7 @@ rock.addEventListener("click", function () {
     }
 });
 
+/* If player selects Scissors */
 scissors.addEventListener("click", function () {
     if (computerChoice === 'rock') {
         showLose();
@@ -32,6 +33,7 @@ scissors.addEventListener("click", function () {
     }
 });
 
+/* If player selects Paper */
 paper.addEventListener("click", function () {
     if (computerChoice === 'rock') {
         showWin();
@@ -42,25 +44,33 @@ paper.addEventListener("click", function () {
     }
 });
 
-var showWin = function () {
-    /* remove div */
-    /* show winner image and play again button */
+const showWin = function () {
+    options.classList.add("hide");
+    win.classList.remove("hide");
+    playAgain.classList.remove("hide");
 };
 
-var showDraw = function () {
-    /* remove div */
-    /* show draw image and play again button */
+const showDraw = function () {
+    options.classList.add("hide");
+    draw.classList.remove("hide");
+    playAgain.classList.remove("hide");
 };
 
-var showLose = function () {
-    /* remove div */
-    /* show try again image and play again button */
+const showLose = function () {
+    options.classList.add("hide");
+    lose.classList.remove("hide");
+    playAgain.classList.remove("hide");
 };
 
-/* Will need a button variable once that is added 
+/* Pressing the Play Again button */
 
-button.addEventListener("click", function () {
-    when you click the Play Again button and it returns to normal
-}); 
+playAgain.addEventListener("click", function () {
+    if (options.classList.contains("hide")) {
+        options.classList.remove("hide");
+        win.classList.add("hide");
+        draw.classList.add("hide");
+        lose.classList.add("hide");
+        playAgain.classList.add("hide");
+    } 
+});
 
- */

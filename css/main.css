@@ -51,11 +51,6 @@ h1 {
   width: 80%;
 }
 
-/*Will this work to hide the options div? Or should I hid the pick one part? */
-.options.hide { 
-  display: none;
-}
-
 .pick-one {
   display: flex;
   justify-content: center;
@@ -72,23 +67,28 @@ h1 {
   width: 100%;
 }
 
-/* How to make the results a div that appears? Look at Skillcrush lesson 6 challenge 1 */
-.win {
-  width: 80%;
-  background-image: nopeat;
-  margin-top: 20px;
+.hide {
+  display: none;
 }
 
-.draw {
-  width: 80%;
-  background-image: nopeat;
-  margin-top: 20px;
-}
-
+.win,
+.draw,
 .lose {
   width: 80%;
   background-image: nopeat;
   margin-top: 20px;
+}
+
+.button {
+  width: 100%;
+}
+
+button{
+  background-color: blue;
+  border: none;
+  color: white;
+  height: 3em;
+  width: 40%;
 }
 
 /* FOOTER STYLES */
@@ -109,10 +109,24 @@ footer p {
   .options li {
     width: 20%;
   }
+
+  .win img,
+  .draw img,
+  .lose img {
+    width: 60%;
+  }
+
+  button {
+    width: 30%;
+  }
 }
 
 
 @media all and (min-width:1200px) {
   /* Desktop styles here */
-
+  .win img,
+  .draw img,
+  .lose img {
+    width: 50%;
+  }
 }
